@@ -142,7 +142,7 @@ public class CombinationSuggestions extends JPanel
 		int[] array = index;
 		for(int i = 0; i < index.length; i++) {
 			if(possibleLocations[index[i]][i] != 0) { // color at position is valid
-				if(i <= index.length - 1) // combination is possible
+				if(i == index.length - 1) // combination is possible
 					return index;
 			} else { // color at position is not valid
 				array = ArrayIncrement(index, nbrColors - 1, i);
